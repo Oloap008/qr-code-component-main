@@ -1,0 +1,65 @@
+:root {
+    --clr-neutral: hsl(0, 0%, 100%);
+    --clr-primary-400: hsl(212, 45%, 89%);
+    --clr-primary-600: hsl(220, 15%, 55%);
+    --clr-primary-900: hsl(218, 44%, 22%);
+
+    --fw-regular: 400;
+    --fw-bold: 900;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    
+    height: 100vh;
+
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-600);
+    font-family: 'Outfit', sans-serif;
+    font-weight: var(--fw-regular);  
+    text-align: center;
+}
+
+.qr {
+    display: grid;
+    gap: 1.5rem;
+    
+    max-width: 319px;
+    
+    background-color: var(--clr-neutral);
+
+    border-radius: 1.125rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.qr-img {
+    border-radius: 0.6875rem;
+}
+
+.qr-content {
+    display: grid;
+    gap: 1rem;
+
+    padding: 0 0.9375rem 1.5rem;
+}
+
+.qr-content__header {
+    color: var(--clr-primary-900);
+
+    font-size: 1.375rem;
+    font-weight: var(--fw-bold);
+}
+
+.qr-content__instruction {
+    font-size: 0.9375rem;
+} 
+
+ /* Feel free to remove these styles or customise in your own stylesheet 👍  */
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
